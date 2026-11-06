@@ -132,13 +132,33 @@ Measure: skip rate, "not relevant" rate by sector, and return visits. If a secto
 
 ---
 
-## 9. Sample pages in this folder
+## 9. Sample pages in this folder (v0.2, app design)
 
-| File | Personality | Status |
+Open `index.html` first. It is the "Following" hub and links to every page. For why this belongs in the app, see `APP-CASE.md`.
+
+| File | What it is | Status |
 |---|---|---|
+| `index.html` | Following hub: today's brief, followed people, suggestions | Prototype |
 | `jensen-huang.html` | Jensen Huang | Draft. Facts marked [verify] |
 | `mukesh-ambani.html` | Mukesh Ambani | Draft. Facts marked [verify] |
-| `raghuram-rajan.html` | Raghuram Rajan | Draft. Facts marked [verify] |
-| `assets/styles.css` | Shared stylesheet for all three | Done |
+| `raghuram-rajan.html` | Raghuram Rajan (institutions, not companies) | Draft. Facts marked [verify] |
+| `donald-trump.html` | Donald Trump, business layer only. The SME showcase | Draft. Facts marked [verify] |
+| `assets/app.css`, `assets/app.js` | Shared premium theme (dark and light) and behaviour | Done |
+| `scripts/fetch_photos.py` | Downloads real portraits from Wikimedia Commons, with credits | Ready to run |
 
-Next steps: fact-check each `[verify]` item, add sourced quotes to "What he's saying", and wire the modules to the graph once the data model is agreed.
+What to try on any page:
+- **Business lens.** Switch between SME owner, Investor and Everything. Low-relevance items fold into "N items hidden for your lens".
+- **Ask.** Answers link only to entries on the page. If nothing matches, it says so instead of guessing.
+- **Follow.** Starts on "Major decisions only".
+
+### Photos
+
+The pages expect `assets/photos/<slug>.jpg` and show a monogram plate until a photo is there. To fetch real, freely licensed portraits with photographer and licence credits:
+
+```
+python3 scripts/fetch_photos.py
+```
+
+This needs network access to `en.wikipedia.org`, `commons.wikimedia.org` and `upload.wikimedia.org`. For production, swap in ET's licensed agency photos under the same file names.
+
+Next steps: fact-check each `[verify]` item, add sourced quotes to "What he's saying", fetch photos, and wire the modules to the graph once the data model is agreed.

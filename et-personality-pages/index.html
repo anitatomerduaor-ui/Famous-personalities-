@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Following · ET Personalities</title>
+<meta name="description" content="The personalities you follow on ET, with today's business brief ranked for your lens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body data-lens="sme">
+<div class="app">
+
+  <header class="appbar scrolled pad">
+    <span class="mast">The Economic Times</span>
+    <div class="bar-group">
+      <button class="icon-btn" type="button" data-alerts aria-label="Alert settings"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1112 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 003.4 0"/></svg></button>
+    </div>
+  </header>
+
+  <main class="pad">
+    <section class="hub-head">
+      <span class="kicker">Personalities</span>
+      <h1>Following</h1>
+      <p>The people who move your business. Ranked for <b>SME owner · Manufacturing</b>.</p>
+    </section>
+
+    <section class="brief" aria-label="Today's brief">
+      <span class="label">Today's brief · sample</span>
+      <h2>Three things that matter for you</h2>
+      <ul>
+        <li><span><b>Donald Trump · Tariffs.</b> Check whether your product's US tariff line changed. Trade talks continue.</span></li>
+        <li><span><b>Mukesh Ambani · AI.</b> Reliance's AI offer may lower the price of AI tools for small firms.</span></li>
+        <li><span><b>Raghuram Rajan · Credit.</b> Bank lending standards matter more to you than the next rate move.</span></li>
+      </ul>
+      <span class="meta">1 item hidden for your lens · sports remark</span>
+    </section>
+
+    <div class="people">
+      <a class="person" href="donald-trump.html">
+        <figure class="ph"><img data-photo="donald-trump" src="assets/photos/donald-trump.jpg" alt="Donald Trump"><div class="monogram" aria-hidden="true">DT</div></figure>
+        <div class="body">
+          <span class="count">2 new · high for you</span>
+          <h3>Donald Trump</h3>
+          <span class="r">Tariffs · Trade · Visas</span>
+          <span class="upd">Tariff on many Indian goods at 50%. What it means for exporters.</span>
+        </div>
+      </a>
+      <a class="person" href="mukesh-ambani.html">
+        <figure class="ph"><img data-photo="mukesh-ambani" src="assets/photos/mukesh-ambani.jpg" alt="Mukesh Ambani"><div class="monogram" aria-hidden="true">MA</div></figure>
+        <div class="body">
+          <span class="count">1 new</span>
+          <h3>Mukesh Ambani</h3>
+          <span class="r">Reliance · Jio · Retail</span>
+          <span class="upd">AI venture and the Jio listing. Both tracked.</span>
+        </div>
+      </a>
+      <a class="person" href="jensen-huang.html">
+        <figure class="ph"><img data-photo="jensen-huang" src="assets/photos/jensen-huang.jpg" alt="Jensen Huang"><div class="monogram" aria-hidden="true">JH</div></figure>
+        <div class="body">
+          <span class="count">1 new</span>
+          <h3>Jensen Huang</h3>
+          <span class="r">NVIDIA · AI compute</span>
+          <span class="upd">Why your AI tool bill is set in his keynotes.</span>
+        </div>
+      </a>
+      <a class="person" href="raghuram-rajan.html">
+        <figure class="ph"><img data-photo="raghuram-rajan" src="assets/photos/raghuram-rajan.jpg" alt="Raghuram Rajan"><div class="monogram" aria-hidden="true">RR</div></figure>
+        <div class="body">
+          <span class="count">ET view updated</span>
+          <h3>Raghuram Rajan</h3>
+          <span class="r">Rates · Banking · Growth</span>
+          <span class="upd">Credit is the input most tied to policy.</span>
+        </div>
+      </a>
+    </div>
+
+    <section class="suggest">
+      <div class="sec-head">
+        <span class="label">Suggested for your lens</span>
+        <h2 style="font-family:var(--display);font-weight:400;font-size:28px;margin:0">People to follow next</h2>
+      </div>
+      <div class="rows">
+        <div class="row"><span class="logo">SA</span><div><b>Sam Altman</b><span>OpenAI · Enterprise AI</span></div><button class="add" type="button" data-follow="sam-altman" data-name="Sam Altman"><span class="lbl">Follow</span></button></div>
+        <div class="row"><span class="logo">NN</span><div><b>Nandan Nilekani</b><span>Infosys · Digital public infrastructure</span></div><button class="add" type="button" data-follow="nandan-nilekani" data-name="Nandan Nilekani"><span class="lbl">Follow</span></button></div>
+        <div class="row"><span class="logo">SN</span><div><b>Satya Nadella</b><span>Microsoft · Cloud and AI</span></div><button class="add" type="button" data-follow="satya-nadella" data-name="Satya Nadella"><span class="lbl">Follow</span></button></div>
+        <div class="row"><span class="logo">JP</span><div><b>Jerome Powell</b><span>US Federal Reserve · Rates</span></div><button class="add" type="button" data-follow="jerome-powell" data-name="Jerome Powell"><span class="lbl">Follow</span></button></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p><b>Prototype.</b> Brief items and counts are samples. Pages for suggested people are not built yet.</p>
+    </footer>
+  </main>
+
+  <nav class="tabbar" aria-label="App">
+    <a href="#"><svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>Home</a>
+    <a href="index.html" class="on"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0114 0"/><path d="M16 4a4 4 0 010 8M22 21a7 7 0 00-4-6.3"/></svg>Following</a>
+    <a href="#"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-4.6A8 8 0 1121 12z"/></svg>Ask ET</a>
+    <a href="#"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>Markets</a>
+    <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>You</a>
+  </nav>
+</div>
+<script src="assets/photo-credits.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
